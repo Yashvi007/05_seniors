@@ -1,0 +1,374 @@
+* {
+    font-family: 'Montserrat' !important;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    border-radius: 20px !important;
+    background-color: #bbdfff;
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    margin: 20px 0px;
+    text-align: center;
+    height: 100% !important;
+
+    background-color: #bbdfff !important;
+    overflow: hidden;
+    border: 0 !important;
+    border-radius: 20px !important;
+
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+
+
+    margin-top: 10px;
+    height: 100px !important;
+    width: 100px !important;
+}
+
+.card-body {
+    padding: 2rem;
+    margin-left: 10px;
+
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.fa-user {
+    color: white;
+}
+
+.profile {
+    list-style: none;
+    display: none;
+}
+
+.wrapper {
+    height: 615px;
+    width: 100%;
+    margin: 0em;
+    padding: 0%;
+}
+
+.wrapper-row {
+    height: 100%;
+}
+
+.nav-vertical {
+    background-color: #0F4C81;
+    height: 100%;
+    width: 280px;
+}
+
+.nav-vertical .menu {
+    padding-left: 25px;
+}
+
+.nav-vertical .menu li a {
+    display: block;
+    padding: 15px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.nav-vertical .menu li a .icon {
+    color: #2CB5A7;
+    width: 25px;
+    display: inline-block;
+}
+
+.nav-vertical .menu li a:hover,
+.nav-vertical .menu li a.active {
+    background: #fff;
+    color: #3d5654;
+}
+
+#ex1 {
+    height: 615px;
+    overflow: scroll;
+}
+
+.add {
+    border: 2px;
+    margin-top: 20px;
+}
+
+.table {
+    margin-top: 20px;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+table {
+    width: 100% !important;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+.head {
+    background-color: #bbdfff;
+
+
+}
+
+/*
+    DEMO STYLE
+*/
+
+
+p {
+
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #bbdfff;
+    color: #fff;
+    transition: all 0.3s;
+    height: 2100px !important;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #bbdfff;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #bbdfff;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background-color: #fff !important;
+    padding-left: 10px;
+    margin-right: 10px !important;
+    border-radius: 1200px;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+    color: #fff;
+
+    background-color: red;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article, a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+
+
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    #sidebarCollapse span {
+        display: none;
+    }
+
+    .table {
+
+        padding: 0% !important;
+        font-size: 13px !important;
+    }
+
+    #content {
+
+    }
+
+    .imggg {
+        width: 100% !important;
+    }
+
+}
